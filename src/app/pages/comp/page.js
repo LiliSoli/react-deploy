@@ -1,9 +1,10 @@
-import React from 'react'
+import Layout from "../../components/Layout/Layout";
 
-const comp = () => {
+export default function Comp() {
   return (
-    <div>components</div>
+    <Layout>
+      <h1 className='text-right'> caca boudin</h1>
+      <div className="w-52 h-56 bg-red-700 flex justify-center items-center">components</div>
+    </Layout>
   )
 }
-
-export default comp
