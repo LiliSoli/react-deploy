@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Banner = () => {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
-  console.log(basePath);
+
   const scrollToSection = () => {
     const section = document.getElementById("portfolio");
     if (section) {
@@ -15,12 +14,16 @@ const Banner = () => {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen bg-[url('/assets/images/bg-black500.webp')] text-white text-center">
+    // <section className="relative flex flex-col items-center justify-center h-screen bg-[url('/assets/images/bg-black500.webp')] text-white text-center">
+     <section className="relative flex flex-col items-center justify-center h-screen text-white text-center"
+    style={{
+      backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}assets/images/bg-black500.webp)`,
+    }}>
 
       <div className="relative w-1/2 h-fit p-8 mx-auto bg-gray-100 rounded-lg shadow-md text-gray-700 flex flex-col items-center justify-center ">
         <div className="absolute -top-24 top mb-8 rounded-full w-48 h-48 bg-gradient-to-r from-orange-300 to-red-300 flex items-center justify-center shadow-lg">
           <img
-            src={`${basePath}assets/images/avatar.webp`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH}assets/images/avatar.webp`}
             alt="Avatar"
             className="rounded-full w-44 h-44"
           />
