@@ -1,7 +1,7 @@
 [
     {
         "title": "Oh my food",
-        "thumb": "../assets/images/thumbs/oh-my-food.webp",
+        "thumb": "assets/images/thumbs/oh-my-food.webp",
         "screenshot": "",
         "altScreenshot": "",
         "skills": [1, 2, 3, 10],
@@ -11,7 +11,7 @@
     },
     {
         "title": "Sophie Bluel",
-        "thumb": "../assets/images/thumbs/sophie-bluel.webp",
+        "thumb": "assets/images/thumbs/sophie-bluel.webp",
         "screenshot": "",
         "altScreenshot": "",
         "description": "Création d'un site web interactif pour une architecte d'intérieur, mettant en avant ses travaux via une galerie dynamique, une page de connexion pour la gestion de contenu, et une interface d'ajout de projets",
@@ -21,7 +21,7 @@
     },
     {
         "title": "Kasa",
-        "thumb": "../assets/images/thumbs/kasa.webp",
+        "thumb": "assets/images/thumbs/kasa.webp",
         "screenshot": "",
         "altScreenshot": "",
         "description": "Création d'une application web de location immobilière développée avec React, à partir de maquettes fournies",
@@ -31,7 +31,7 @@
     },
     {
         "title": "Nina Carducci",
-        "thumb": "../assets/images/thumbs/nina-carducci.webp",
+        "thumb": "assets/images/thumbs/nina-carducci.webp",
         "screenshot": "",
         "altScreenshot": "",
         "description": "Optimisation du référencement d'un site web pour une photographe avec Lighthouse, Wave et Schema.org, afin d'identifier les points d'amélioration en performance et SEO",
@@ -41,7 +41,7 @@
     },
     {
         "title": "724 events",
-        "thumb": "../assets/images/thumbs/724-events.webp",
+        "thumb": "assets/images/thumbs/724-events.webp",
         "screenshot": "",
         "altScreenshot": "",
         "description": "Debug et finalisation d'un site vitrine d'une agence événementielle, avec analyse et correction des erreurs dans le code existant et utilisation des tests unitaires",
@@ -51,7 +51,7 @@
     },
     {
         "title": "Argent Bank",
-        "thumb": "../assets/images/thumbs/argent-bank.webp",
+        "thumb": "assets/images/thumbs/argent-bank.webp",
         "screenshot": "",
         "altScreenshot": "",
         "description": "Migration d'un site HTML/CSS vers une application front-end dynamique pour une banque en ligne, en utilisant React et Redux",

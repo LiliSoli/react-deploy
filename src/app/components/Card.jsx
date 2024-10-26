@@ -8,6 +8,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from 'react-icons/fa';
 
 function Card({ card }) {
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const openModal = (event) => {
@@ -24,7 +25,7 @@ function Card({ card }) {
             <div className="rounded-lg shadow-2xl overflow-hidden transition-all duration-200 ease-in-out transform hover:scale-105 cursor-pointer"
                 onClick={openModal}>
                 <img
-                    src={card.thumb}
+                    src={`${basePath}${card.thumb}`}
                     alt={card.title}
                     className="w-96 h-80 object-cover filter grayscale transition-all duration-300 ease-in-out transform hover:scale-110 hover:grayscale-0"
                 />
@@ -47,7 +48,7 @@ function Card({ card }) {
                 <h4 className="text-3xl font-bold mb-4 text-gray-800">{card.title}</h4>
 
                 <img
-                    src={card.thumb}
+                    src={`${basePath}${card.thumb}`}
                     alt={card.title}
                     className="mb-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md xl:max-w-lg mx-auto rounded-md shadow-md"
                 />

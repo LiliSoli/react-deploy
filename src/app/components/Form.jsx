@@ -5,6 +5,8 @@ import PropTypes from "prop-types";
 import emailjs from "emailjs-com";
 
 const Form = ({ onSuccess = () => null, onError = () => null }) => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
+  
   const {
     register,
     handleSubmit,
@@ -41,7 +43,7 @@ const Form = ({ onSuccess = () => null, onError = () => null }) => {
     <div className="max-w-2xl mx-auto bg-gray-100 rounded-lg shadow-md">
       <div className="relative max-h-300 mb-4 shadow-lg">
         <img
-          src="/assets/images/laptop.webp"
+          src={`${basePath}assets/images/laptop.webp`}
           alt="Vue d'un ordinateur"
           className="rounded-t-lg" 
         />
