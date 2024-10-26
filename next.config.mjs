@@ -4,7 +4,6 @@ const repoName = 'react-deploy'; // Remplace par le nom de ton dépôt GitHub
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   assetPrefix: isProd ? `/${repoName}/` : '',
   basePath: isProd ? `/${repoName}` : '',
   images: {
